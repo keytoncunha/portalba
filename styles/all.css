@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+:root{
+    --cor1: #8C031C;
+    --cor2: #BF3604;
+    --cor3: #D96704;
+    --cor4: #F2B279;
+    --cor5: #FEFEFE;
+    --font1: 'Lato', Arial, Helvetica, sans-serif;
+    --font2: 'Rye', cursive;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    min-height: 100vh;
+}
+body{
+    background-color: var(--cor4);
+    font-family: var(--font1);
+    font-size: 1rem;
+}
+h1,h2{
+    font-family: var(--font2);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    background: var(--cor3) url('../imgs/bckgHomeMobile.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+section{
+    min-height: 50vh;
+    backdrop-filter: blur(30px);
+    margin: 20px auto;
+    box-shadow: 0px 0px 20px #9c9c9c5e;
+}
+.section01, .section02{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: var(--cor5);
+    padding: 0px 10px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 15px #d9670475;
+}
+
+.section01 a{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 15px;
+    transition: .3s;
+}
+.section01 a:hover{
+    background-color: var(--cor5);
+    color: var(--cor2);
+}
+.section02 h6{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    section{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body{
+        font-size: 1.1rem;
+    }
+    main{
+        justify-content: space-evenly;
+        background-image: url('../imgs/bckgHomeTable.jpg');
+    }
+    section{
+        width: 40%;
+        margin: 30px auto;
+    }
+}
+@media screen and (min-width:992px) {
+    body{
+        font-size: 1.2rem;
+    }
+    main{
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        background-image: url('../imgs/bckgHomeDesk.jpg');
+    }
+    section{
+        width: 40%;
+        margin: 40px auto;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .pizza{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:992px) {
+    .pizza{
+        width: 80%;
+        max-width: 600px;
+    }
+}
+@media screen and (min-width:992px) {
+    .pizza{
+        width: 600px;
+    }
+} 
+
+footer a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+}

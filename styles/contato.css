@@ -1,0 +1,19 @@
+section{
+    color: var(--cor5);
+}
+.sectionContato{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+iframe{
+    width: 100%;
+    height: 50vh;
+}
+
+footer a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+}

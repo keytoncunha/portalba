@@ -1,0 +1,14 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--cor5);
+    text-indent: 20px;
+    padding: 0px 20px;
+}
+
+footer a:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
