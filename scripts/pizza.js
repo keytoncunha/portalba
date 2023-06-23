@@ -191,6 +191,7 @@ class Pizza{
         } else if (this.pedidos.length >= 1){
             this.h2Title.innerHTML = "Seus Pedidos"
         }
+        this.h2Title.setAttribute('style','text-align: center;')
         this.pedidos.map((piz,ind)=>{
             this.precoTot+=piz.precoTot
             const styleDivCadaPedido=
