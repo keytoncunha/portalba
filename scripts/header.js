@@ -47,7 +47,7 @@ spanClose.addEventListener('click',()=>{
 nav.appendChild(spanClose)
 
 const aHome = document.createElement('a')
-aHome.setAttribute('href','/')
+aHome.setAttribute('href','/portalba')
 aHome.innerText = 'Home'
 nav.appendChild(aHome)
 
